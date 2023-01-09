@@ -4,7 +4,7 @@ import { Post } from 'src/app/models/post.model';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
-  styleUrls: ['./post.component.sass']
+  styleUrls: ['./post.component.scss']
 })
 export class PostComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy {
 
