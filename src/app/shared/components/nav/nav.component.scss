@@ -1,0 +1,12 @@
+div{
+  @apply shadow-md bg-gray-100 mb-6;
+  div{
+    @apply flex p-2 min-w-full;
+    nav{
+      @apply flex justify-between min-w-full px-4;
+      ul{
+        @apply flex justify-between list-none w-80;
+      }
+    }
+  }
+}
