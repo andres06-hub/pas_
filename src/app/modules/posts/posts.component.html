@@ -1,4 +1,8 @@
 <app-nav></app-nav>
+<section>
+  <p>Posts: {{ posts.length }}</p>
+  <p>{{ date | date }}</p>
+</section>
 <div>
   <app-post [post]="post" *ngFor="let post of posts"></app-post>
 </div>

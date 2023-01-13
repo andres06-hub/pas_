@@ -5,13 +5,13 @@ import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PostsComponent } from './modules/posts/posts.component';
-import { NavComponent } from './shared/components/nav/nav.component';
 import { SharedModule } from './shared/shared.module';
+import { TimeAgoPipe } from './modules/pipes/time-ago.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TimeAgoPipe,
   ],
   imports: [
     BrowserModule,

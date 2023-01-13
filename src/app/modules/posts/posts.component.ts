@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/models/post.model';
-import { PostsService } from 'src/app/services/posts.service'
+import { PostsService } from 'src/app/modules/posts/services/posts.service'
 
 @Component({
   selector: 'app-posts',
@@ -14,17 +14,17 @@ export class PostsComponent implements OnInit {
   constructor(
     private _postsService: PostsService
   ) {}
-
+  date: Date = new Date();
 
   ngOnInit(): void {
     this._postsService.getAllPosts()
-    .subscribe(
-      data => {
-        this.posts = data,
-        console.log(this.posts.length);
-      },
-      error => console.log(error)
-    );
+    .subscribe({
+      next: data => {
+          this.posts = data,
+          console.log(this.posts.length);
+        },
+      error: error => console.log(error)
+    },);
   }
 
 }
