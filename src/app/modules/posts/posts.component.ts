@@ -17,14 +17,15 @@ export class PostsComponent implements OnInit {
   date: Date = new Date();
 
   ngOnInit(): void {
-    this._postsService.getAllPosts()
-    .subscribe({
-      next: data => {
-          this.posts = data,
-          console.log(this.posts.length);
-        },
-      error: error => console.log(error)
-    },);
+    this._postsService.getPosts()
+      .valueChanges.subscribe(({data, error}) => {
+        try {
+          this.posts = data.posts
+        } catch (e) {
+          console.error('ERROR: ', error);
+        }
+    })
+
   }
 
 }
