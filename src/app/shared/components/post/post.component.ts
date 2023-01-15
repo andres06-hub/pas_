@@ -38,6 +38,9 @@ export class PostComponent implements OnInit, OnChanges, AfterViewInit, OnDestro
     title: '',
     content: '',
     authorId: 0,
-    authorName: '',
+    author: {
+      id: 0,
+      name: ''
+    },
   }
 }
