@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent } from './components/button/button.component';
 import { PostComponent } from './components/post/post.component';
 import { NavComponent } from './components/nav/nav.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -13,7 +13,8 @@ import { NavComponent } from './components/nav/nav.component';
     ButtonComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     PostComponent,
