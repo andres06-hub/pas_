@@ -20,7 +20,7 @@ export class PostsComponent implements OnInit {
     this._postsService.getPosts()
       .valueChanges.subscribe(({data, error}) => {
         try {
-          this.posts = data.posts
+          this.posts = data.posts;
         } catch (e) {
           console.error('ERROR: ', error);
         }
