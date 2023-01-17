@@ -1,0 +1,13 @@
+div{
+  @apply grid grid-cols-1 justify-items-center w-full h-full bg-gray-300 pt-6;
+  p{
+    @apply text-[3em] p-0 m-0;
+  }
+  section{
+    @apply w-[39em] h-fit rounded-md;
+    img{
+      object-fit: cover;
+      @apply rounded-full;
+    }
+  }
+}
