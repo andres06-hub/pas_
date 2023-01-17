@@ -8,6 +8,8 @@ import { Post } from 'src/app/models/post.model';
 })
 export class PostComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy {
 
+  content: string = 'See more';
+
   constructor() {
     // Before render
   }

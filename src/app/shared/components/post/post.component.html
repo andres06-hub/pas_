@@ -1,8 +1,8 @@
 <div>
-  <span>{{ post.id}}</span>
-  <h3>{{ post.title }}</h3>
-  <p>{{ post.content }}</p>
-  <p>{{ post.authorId }}</p>
-  <p>{{ post.author.name }}</p>
-  <app-button></app-button>
+  <span>id: {{ post.id}}</span>
+  <h3 class="ele">{{ post.title }}</h3>
+  <p class="ele">{{ post.content }}</p>
+  <p class="ele">{{ post.authorId }}</p>
+  <p class="ele">{{ post.author.name }}</p>
+  <app-button [contet]="content"></app-button>
 </div>

@@ -1,6 +1,6 @@
 div{
-  @apply grid justify-between border rounded-md p-4 w-40 min-h-full bg-slate-100;
-  h3{
-    @apply text-center;
+  @apply grid border rounded-md py-4 px-4 w-40 my-4 min-h-[20rem] min-w-[15rem] bg-slate-100;
+  .ele{
+    @apply text-center ;
   }
 }
