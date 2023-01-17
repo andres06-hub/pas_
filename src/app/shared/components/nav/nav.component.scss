@@ -1,11 +1,14 @@
 div{
-  @apply shadow-md bg-gray-100 mb-6;
+  @apply shadow-md bg-gray-100;
   div{
     @apply flex p-2 min-w-full;
     nav{
-      @apply flex justify-between min-w-full px-4;
+      @apply flex justify-start justify-items-center min-w-full px-4;
       ul{
-        @apply flex justify-between list-none w-80;
+        @apply flex justify-between list-none w-[13rem] ml-28;
+        li{
+          @apply flex flex-col justify-center text-sm h-full;
+        }
       }
     }
   }
