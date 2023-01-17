@@ -1,3 +1,9 @@
+section{
+  @apply flex flex-row justify-between mb-4;
+  .txt{
+    @apply font-semibold text-[13px] text-gray-500;
+  }
+}
 div{
-  @apply grid grid-cols-6 max-w-full border container;
+  @apply grid grid-cols-4 justify-items-center min-w-full border;
 }
