@@ -4,6 +4,8 @@ import { ButtonComponent } from './components/button/button.component';
 import { PostComponent } from './components/post/post.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { SpinnerService } from './service/spinner.service';
 
 
 @NgModule({
@@ -11,6 +13,7 @@ import { RouterModule } from '@angular/router';
     PostComponent,
     NavComponent,
     ButtonComponent,
+    SpinnerComponent
   ],
   imports: [
     CommonModule,
@@ -20,6 +23,7 @@ import { RouterModule } from '@angular/router';
     PostComponent,
     NavComponent,
     ButtonComponent,
+    SpinnerComponent
   ]
 })
 export class SharedModule { }
