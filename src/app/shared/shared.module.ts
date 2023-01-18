@@ -5,13 +5,15 @@ import { PostComponent } from './components/post/post.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './components/spinner/spinner.component';
+import { IconComponent } from './components/icon/icon.component';
 
 @NgModule({
   declarations: [
     PostComponent,
     NavComponent,
     ButtonComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    IconComponent
   ],
   imports: [
     CommonModule,
