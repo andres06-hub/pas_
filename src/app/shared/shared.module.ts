@@ -5,8 +5,6 @@ import { PostComponent } from './components/post/post.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-import { SpinnerService } from './service/spinner.service';
-
 
 @NgModule({
   declarations: [
