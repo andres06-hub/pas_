@@ -1,0 +1,9 @@
+section{
+  @apply flex justify-center fixed w-full h-full bg-gray-200;
+  div{
+    @apply flex flex-col justify-center mx-1 bg-indigo-400 h-12 w-32 text-center rounded-xl;
+    a{
+      @apply text-sm;
+    }
+  }
+}
