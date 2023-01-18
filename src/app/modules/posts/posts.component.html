@@ -3,6 +3,9 @@
   <p class="txt">Posts: {{ posts.length }}</p>
   <p class="txt">{{ date | date }}</p>
 </section>
-<div>
+<div *ngIf="ngAfterViewInit">
   <app-post [post]="post" *ngFor="let post of posts"></app-post>
+</div>
+<div *ngIf="ngAfterViewInit">
+  <p>No se encontraron resultados</p>
 </div>

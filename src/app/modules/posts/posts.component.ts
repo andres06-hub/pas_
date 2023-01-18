@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Post } from 'src/app/models/post.model';
 import { PostsService } from 'src/app/modules/posts/services/posts.service'
 
@@ -7,7 +7,7 @@ import { PostsService } from 'src/app/modules/posts/services/posts.service'
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.scss']
 })
-export class PostsComponent implements OnInit {
+export class PostsComponent implements OnInit, AfterViewInit {
 
   posts: Post[] = []
 
@@ -25,7 +25,10 @@ export class PostsComponent implements OnInit {
           console.error('ERROR: ', error);
         }
     })
+  }
 
+  ngAfterViewInit(): void {
+    this.posts.length > 0;
   }
 
 }

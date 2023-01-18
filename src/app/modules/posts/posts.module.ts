@@ -5,7 +5,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { PostsComponent } from './posts.component';
 
 
-
 @NgModule({
   declarations: [
     PostsComponent
