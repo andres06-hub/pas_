@@ -1,0 +1,9 @@
+.input-container{
+  @apply flex flex-col ;
+  label{
+    @apply block text-sm font-medium text-gray-700;
+  }
+  input{
+    @apply block w-full my-2 rounded-md border-solid border-2 pl-3 pr-2 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm;
+  }
+}

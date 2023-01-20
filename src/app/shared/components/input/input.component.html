@@ -1,2 +1,4 @@
-<label *ngIf="!hideLabel" for="input">{{ label }}</label>
-<input type="{{type}}" placeholder="{{placeholder}}">
+<div class="input-container">
+  <label *ngIf="!hideLabel" for="input">{{ label }}</label>
+  <input type="{{ type }}" placeholder="{{ placeholder }}">
+</div>
