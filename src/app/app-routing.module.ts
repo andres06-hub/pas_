@@ -2,8 +2,9 @@
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'posts', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)},
+  {path: 'create', loadChildren: ()=> import('./modules/create/create.module').then(m => m.CreateModule)},
   {path: 'posts', loadChildren: () => import('./modules/posts/posts.module').then(m => m.PostsModule)},
   {path: 'not-found', loadChildren: () => import('./modules/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)},
   {path: '**', redirectTo: 'not-found', pathMatch: 'full'},
