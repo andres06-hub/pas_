@@ -1,10 +1,11 @@
 <app-nav></app-nav>
 <section>
   <p class="txt">Posts: {{ posts.length }}</p>
-  <!-- TODO: CREATE COMPONENTE FOR THIS -->
   <form action="">
-    <fa-icon [icon]="iconSearch"></fa-icon>
-    <input type="text">
+    <app-input [hideLabel]="hideLabel" [type]="type" [placeholder]="placeHolder"></app-input>
+    <button type="submit">
+      <fa-icon [icon]="iconSearch"></fa-icon>
+    </button>
   </form>
   <p class="txt">{{ date | date }}</p>
 </section>

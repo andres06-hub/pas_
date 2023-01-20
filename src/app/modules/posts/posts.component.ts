@@ -2,6 +2,7 @@ import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { Post } from 'src/app/models/interfaces/post.model';
 import { PostsService } from 'src/app/modules/posts/services/posts.service'
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { Type } from 'src/app/models/enums/input.type';
 
 @Component({
   selector: 'app-posts',
@@ -12,6 +13,9 @@ export class PostsComponent implements OnInit, AfterViewInit {
 
   posts: Post[] = []
   iconSearch=faMagnifyingGlass
+  hideLabel: boolean = true;
+  type: string = Type.Search;
+  placeHolder: string = 'Search';
 
   constructor(
     private _postsService: PostsService
