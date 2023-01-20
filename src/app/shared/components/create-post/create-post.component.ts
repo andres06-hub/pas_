@@ -9,6 +9,7 @@ import { Types } from 'src/app/models/interfaces/input.model';
 })
 export class CreatePostComponent {
 
+  title: string = 'Create Post';
   content: string = 'Send';
   type = {
     txt: Type.Text,
