@@ -17,7 +17,7 @@ export class CreatePostComponent {
   label = {
     np1: 'Title',
     np2: 'Content',
-    np3: 'Id Author'
+    np3: 'IdAuthor'
   };
   placeHolder = {
     title: 'Title',

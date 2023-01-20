@@ -1,0 +1,9 @@
+.create-post-container{
+  @apply grid grid-cols-1 w-[100%] h-[100%] border rounded-xl justify-items-center shadow-lg;
+  div{
+    @apply flex flex-col justify-center;
+  }
+  form{
+    @apply flex flex-col min-w-[80%] my-2 drop-shadow-lg;
+  }
+}
