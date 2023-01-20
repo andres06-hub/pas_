@@ -1,19 +1,15 @@
 .div-container{
-  @apply grid grid-cols-2 grid-rows-1 w-full h-[35rem] border-2 border-blue-500;
-  .post-container{
-    @apply border border-red-500 ;
+  @apply grid grid-cols-2 grid-rows-1 w-full h-[35rem];
+  .create-container{
+    // @apply border;
     section{
-      @apply flex justify-center border-4 py-4 h-full;
-      app-create-post{
+      @apply flex justify-center py-4 h-full;
+      app-create-post, app-create-author{
         @apply w-[80%];
       }
     }
     article{
       @apply w-[100%] min-h-full text-center;
     }
-  }
-
-  .author-container{
-    @apply grid grid-cols-1 border;
   }
 }
