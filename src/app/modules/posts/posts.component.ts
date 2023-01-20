@@ -1,6 +1,7 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Post } from 'src/app/models/post.model';
+import { Post } from 'src/app/models/interfaces/post.model';
 import { PostsService } from 'src/app/modules/posts/services/posts.service'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-posts',
@@ -10,6 +11,7 @@ import { PostsService } from 'src/app/modules/posts/services/posts.service'
 export class PostsComponent implements OnInit, AfterViewInit {
 
   posts: Post[] = []
+  iconSearch=faMagnifyingGlass
 
   constructor(
     private _postsService: PostsService

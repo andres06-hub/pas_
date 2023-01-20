@@ -1,6 +1,11 @@
 <app-nav></app-nav>
 <section>
   <p class="txt">Posts: {{ posts.length }}</p>
+  <!-- TODO: CREATE COMPONENTE FOR THIS -->
+  <form action="">
+    <fa-icon [icon]="iconSearch"></fa-icon>
+    <input type="text">
+  </form>
   <p class="txt">{{ date | date }}</p>
 </section>
 <div *ngIf="ngAfterViewInit">

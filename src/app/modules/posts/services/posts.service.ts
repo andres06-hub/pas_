@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
-import { Post } from '../../../models/post.model';
+import { Post } from '../../../models/interfaces/post.model';
 import { Apollo } from 'apollo-angular';
 import { GET_POSTS } from '../../graphql.queries';
 
