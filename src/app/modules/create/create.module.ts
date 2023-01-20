@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { CreateComponent } from './create.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { createRoutingModule } from './create-routing.module';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,6 +11,7 @@ import { createRoutingModule } from './create-routing.module';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     createRoutingModule,
     SharedModule
   ]
