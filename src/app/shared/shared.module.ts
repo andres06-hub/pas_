@@ -5,7 +5,8 @@ import { PostComponent } from './components/post/post.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-import { IconComponent } from './components/icon/icon.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
+import { InputComponent } from './components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { IconComponent } from './components/icon/icon.component';
     NavComponent,
     ButtonComponent,
     SpinnerComponent,
-    IconComponent
+    CreatePostComponent,
+    InputComponent,
   ],
   imports: [
     CommonModule,
@@ -23,7 +25,8 @@ import { IconComponent } from './components/icon/icon.component';
     PostComponent,
     NavComponent,
     ButtonComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    CreatePostComponent
   ]
 })
 export class SharedModule { }
