@@ -5,9 +5,7 @@ import { PostComponent } from './components/post/post.component';
 import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-import { CreatePostComponent } from './components/create-post/create-post.component';
 import { InputComponent } from './components/input/input.component';
-import { CreateAuthorComponent } from './components/create-author/create-author.component';
 
 @NgModule({
   declarations: [
@@ -15,9 +13,7 @@ import { CreateAuthorComponent } from './components/create-author/create-author.
     NavComponent,
     ButtonComponent,
     SpinnerComponent,
-    CreatePostComponent,
     InputComponent,
-    CreateAuthorComponent,
   ],
   imports: [
     CommonModule,
@@ -29,8 +25,6 @@ import { CreateAuthorComponent } from './components/create-author/create-author.
     ButtonComponent,
     SpinnerComponent,
     InputComponent,
-    CreatePostComponent,
-    CreateAuthorComponent,
 
   ]
 })
