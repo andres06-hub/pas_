@@ -1,7 +1,10 @@
 section{
-  @apply flex flex-row justify-between mb-4 px-4 pt-4;
+  @apply flex justify-between mb-4 px-4 pt-4 text-center;
   .txt{
     @apply font-semibold text-[13px] text-gray-500;
+  }
+  form{
+    @apply flex justify-items-center text-center;
   }
 }
 div{
