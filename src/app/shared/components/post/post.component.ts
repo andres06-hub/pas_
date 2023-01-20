@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, OnChanges, AfterViewInit, OnDestroy, SimpleChanges } from '@angular/core';
-import { Post } from 'src/app/models/post.model';
+import { Post } from 'src/app/models/interfaces/post.model';
 
 @Component({
   selector: 'app-post',
