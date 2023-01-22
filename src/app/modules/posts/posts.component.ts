@@ -9,7 +9,7 @@ import { Type } from 'src/app/models/enums/input.type';
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.scss']
 })
-export class PostsComponent implements OnInit, AfterViewInit {
+export class PostsComponent implements OnInit {
 
   posts: Post[] = []
   iconSearch=faMagnifyingGlass
@@ -32,9 +32,4 @@ export class PostsComponent implements OnInit, AfterViewInit {
         }
     })
   }
-
-  ngAfterViewInit(): void {
-    this.posts.length > 0;
-  }
-
 }

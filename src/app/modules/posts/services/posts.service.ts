@@ -17,7 +17,6 @@ export class PostsService {
 
   getPosts() {
     return this._apollo.watchQuery<any>({
-      //QUERY
       query: GET_POSTS
     });
   }

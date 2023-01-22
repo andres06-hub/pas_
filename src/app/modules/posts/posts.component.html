@@ -9,9 +9,9 @@
   </form>
   <p class="txt">{{ date | date }}</p>
 </section>
-<div *ngIf="ngAfterViewInit">
+<div *ngIf="posts.length > 0">
   <app-post [post]="post" *ngFor="let post of posts"></app-post>
 </div>
-<div *ngIf="ngAfterViewInit">
+<div *ngIf="posts.length === 0">
   <p>No se encontraron resultados</p>
 </div>
