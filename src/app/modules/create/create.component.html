@@ -7,10 +7,10 @@
         <div>
           <p>{{ postT }}</p>
         </div>
-        <form action="">
-          <app-input [label]="label.np1" [type]="type.txt" [placeholder]="placeHolder.title"></app-input>
-          <app-input [label]="label.np2" [type]="type.txt" [placeholder]="placeHolder.content"></app-input>
-          <app-input [label]="label.np3" [type]="type.num" [placeholder]="placeHolder.idAuthor"></app-input>
+        <form #formP class="form-group" (submit)="onFormSubmit()" [formGroup]="form">
+          <app-input label="Title" type="text" placeholder="Title" formControlName="title"></app-input>
+          <app-input label="Content" type="text" placeholder="Content" formControlName="content"></app-input>
+          <app-input label="IdAuthor" type="number" placeholder="IdAuthor" formControlName="idAuthor"></app-input>
           <app-button buttonType="submit">Send</app-button>
         </form>
       </main>
@@ -24,7 +24,7 @@
           <p>{{ authorT }}</p>
         </div>
         <form >
-          <app-input [label]="label.np4" [type]="type.txt" [placeholder]="placeHolder.name"></app-input>
+          <app-input label="Name" type="text" placeholder="Name"></app-input>
           <app-button buttonType="submit">Send</app-button>
         </form>
       </main>
