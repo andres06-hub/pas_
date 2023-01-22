@@ -24,3 +24,17 @@ export const GET_ONE_POST = gql`
     }
   }
 `;
+
+export const GET_AUTHORS = gql`
+  query{
+    authors{
+      id
+      name
+      post{
+        id
+        title
+        content
+      }
+    }
+  }
+`;
