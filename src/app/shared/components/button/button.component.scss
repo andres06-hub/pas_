@@ -1,5 +1,5 @@
 div{
-  @apply flex flex-row justify-center min-w-full w-max mt-7;
+  @apply flex justify-center min-w-full w-max mt-7;
   button {
     @apply flex items-center justify-center px-4 py-1 w-fit rounded-lg text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300;
   }

@@ -1,5 +1,6 @@
 div{
-  @apply shadow-md bg-gray-100;
+  @apply shadow-sm bg-gray-100;
+  background: linear-gradient(to right, rgb(22, 22, 22), 80%, rgb(37, 124, 255));
   div{
     @apply flex p-2 min-w-full;
     nav{
@@ -7,7 +8,7 @@ div{
       ul{
         @apply flex justify-between list-none w-[13rem] ml-28;
         li{
-          @apply flex flex-col justify-center text-sm h-full;
+          @apply flex flex-col justify-center text-sm text-white h-full;
         }
       }
     }

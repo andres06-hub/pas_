@@ -1,13 +1,19 @@
 section{
   @apply flex justify-between mb-4 px-4 pt-4 text-center;
   .txt{
-    @apply font-semibold text-[13px] text-gray-500;
+    @apply font-semibold text-[13px] text-white;
   }
   form{
-    @apply flex justify-items-center text-center;
+    @apply flex justify-center text-center;
+    app-input{
+      @apply flex flex-col justify-end mx-1;
+    }
+    app-button{
+      @apply flex justify-start;
+    }
   }
 }
 div{
-  @apply grid grid-cols-4 justify-items-center min-w-full border;
+  @apply grid grid-cols-4 justify-items-center min-w-full pt-8 text-white text-sm;
 }
 
