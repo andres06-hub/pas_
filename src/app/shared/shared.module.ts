@@ -6,6 +6,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { RouterModule } from '@angular/router';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { InputComponent } from './components/input/input.component';
+import { AuthorComponent } from './components/author/author.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { InputComponent } from './components/input/input.component';
     ButtonComponent,
     SpinnerComponent,
     InputComponent,
+    AuthorComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +27,7 @@ import { InputComponent } from './components/input/input.component';
     ButtonComponent,
     SpinnerComponent,
     InputComponent,
-
+    AuthorComponent,
   ]
 })
 export class SharedModule { }
