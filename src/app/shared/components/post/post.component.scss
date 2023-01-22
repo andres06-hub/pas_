@@ -1,6 +1,15 @@
 div{
-  @apply grid border rounded-md py-4 px-4 w-40 my-4 min-h-[20rem] min-w-[15rem] bg-slate-100;
+  @apply grid rounded-md py-4 px-4 w-40 my-4 h-fit min-w-[15rem] bg-slate-100;
+  span{
+    @apply text-gray-400;
+  }
   .ele{
     @apply text-center text-black;
+  }
+  .a-a{
+    @apply flex justify-center min-w-full w-max mt-7 pb-4;
+    a{
+      @apply flex items-center justify-center px-4 py-1 w-fit rounded-lg text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300;
+    }
   }
 }
