@@ -3,6 +3,15 @@ div{
   .txt{
     @apply font-semibold text-[13px] text-white;
   }
+    form{
+    @apply flex justify-center text-center;
+    app-input{
+      @apply flex flex-col justify-end mx-1;
+    }
+    app-button{
+      @apply flex justify-start;
+    }
+}
 }
 .authors{
   @apply grid grid-cols-5 justify-items-center min-h-full fixed w-full;

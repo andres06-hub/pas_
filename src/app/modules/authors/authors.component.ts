@@ -1,6 +1,7 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
 import { Author } from 'src/app/models/interfaces/author.model';
 import { AuthorsService } from './services/authors.service';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-authors',
@@ -11,6 +12,10 @@ export class AuthorsComponent implements AfterViewInit, OnInit{
 
   authors: Author[] = [];
   date = new Date();
+
+  iconSearch = faMagnifyingGlass;
+  hideLabel: boolean = true;
+  placeHolder: string = 'Search';
 
   constructor(private _authorsSvc: AuthorsService) {}
 

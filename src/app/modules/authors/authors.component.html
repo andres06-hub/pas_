@@ -1,6 +1,12 @@
 <app-nav></app-nav>
 <div>
   <p class="txt">Authors: {{ authors.length }}</p>
+  <form action="">
+    <app-input [hideLabel]="hideLabel" type="search" [placeholder]="placeHolder"></app-input>
+    <app-button>
+      <fa-icon [icon]="iconSearch"></fa-icon>
+    </app-button>
+  </form>
   <p class="txt">{{ date | date }}</p>
 </div>
 <section class="authors" *ngIf="ngAfterViewInit">
