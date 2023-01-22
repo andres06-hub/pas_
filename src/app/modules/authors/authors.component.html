@@ -1,0 +1,8 @@
+<app-nav></app-nav>
+<div>
+  <p class="txt">Authors: {{ authors.length }}</p>
+  <p class="txt">{{ date | date }}</p>
+</div>
+<section class="authors" *ngIf="ngAfterViewInit">
+  <app-author [author]="author" *ngFor="let author of authors"></app-author>
+</section>

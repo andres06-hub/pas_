@@ -1,0 +1,9 @@
+div{
+  @apply flex justify-between mb-4 px-4 pt-4 text-center;
+  .txt{
+    @apply font-semibold text-[13px] text-white;
+  }
+}
+.authors{
+  @apply grid grid-cols-5 justify-items-center min-h-full fixed w-full;
+}
