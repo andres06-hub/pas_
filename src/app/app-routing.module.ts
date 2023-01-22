@@ -6,6 +6,7 @@ const routes: Routes = [
   {path: 'home', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule)},
   {path: 'create', loadChildren: ()=> import('./modules/create/create.module').then(m => m.CreateModule)},
   {path: 'posts', loadChildren: () => import('./modules/posts/posts.module').then(m => m.PostsModule)},
+  {path: 'authors', loadChildren: ()=> import('./modules/authors/authors.module').then(m => m.AuthorsModule)},
   {path: 'not-found', loadChildren: () => import('./modules/page-not-found/page-not-found.module').then(m => m.PageNotFoundModule)},
   {path: '**', redirectTo: 'not-found', pathMatch: 'full'},
 
