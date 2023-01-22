@@ -1,0 +1,34 @@
+.container{
+  @apply grid grid-rows-1 rounded-lg w-fit h-fit m-4 bg-white;
+  .s-img{
+    @apply flex justify-center py-4 w-40;
+    .d-img{
+      @apply border-2 border-gray-200 w-24 h-24 object-fill border rounded-full;
+      img{
+        @apply rounded-full;
+      }
+    }
+  }
+
+  .s-content{
+    @apply flex flex-col text-white w-full h-20 ;
+    div{
+      @apply rounded-lg h-full mx-4 p-2 shadow-md;
+      .ele-id{
+        @apply text-[12px] text-gray-500;
+      }
+      .ele{
+        @apply text-center text-black;
+      }
+    }
+  }
+  app-button{
+    @apply pb-4;
+  }
+  .a-a{
+    @apply flex justify-center min-w-full w-max mt-7 pb-4;
+    a{
+      @apply flex items-center justify-center px-4 py-1 w-fit rounded-lg text-white bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300;
+    }
+  }
+}
