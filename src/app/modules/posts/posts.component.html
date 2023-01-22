@@ -3,9 +3,9 @@
   <p class="txt">Posts: {{ posts.length }}</p>
   <form action="">
     <app-input [hideLabel]="hideLabel" [type]="type" [placeholder]="placeHolder"></app-input>
-    <button type="submit">
+    <app-button>
       <fa-icon [icon]="iconSearch"></fa-icon>
-    </button>
+    </app-button>
   </form>
   <p class="txt">{{ date | date }}</p>
 </section>
