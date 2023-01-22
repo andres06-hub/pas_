@@ -1,6 +1,6 @@
 div{
   @apply grid border rounded-md py-4 px-4 w-40 my-4 min-h-[20rem] min-w-[15rem] bg-slate-100;
   .ele{
-    @apply text-center ;
+    @apply text-center text-black;
   }
 }
