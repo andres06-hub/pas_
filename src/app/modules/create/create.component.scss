@@ -1,14 +1,14 @@
 .div-container{
   @apply grid grid-cols-2 grid-rows-1 w-full h-[35rem];
   .create-container{
-    @apply flex justify-center py-4 border border-red-300;
+    @apply flex justify-center py-4;
     .section{
       @apply grid grid-cols-1 h-full w-[80%];
     }
   }
 }
 .main{
-  @apply grid grid-cols-1 w-[100%] h-[100%] border rounded-xl justify-items-center shadow-lg;
+  @apply grid grid-cols-1 w-[100%] h-[100%] border rounded-xl justify-items-center shadow-lg bg-slate-100;
   div{
     @apply flex flex-col justify-center;
   }
